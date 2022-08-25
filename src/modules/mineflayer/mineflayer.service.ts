@@ -10,9 +10,9 @@ export class MineflayerService {
         this.initBot()
     }
 
-    bot: mineflayer.Bot
+    private bot: mineflayer.Bot
 
-    options = {
+    private options = {
         host: process.env.MINECRAFT_SERVER,
         username: process.env.USERNAME
     }

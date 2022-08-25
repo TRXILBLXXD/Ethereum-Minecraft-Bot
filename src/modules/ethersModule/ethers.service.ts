@@ -6,7 +6,7 @@ import { ethers } from 'ethers';
 export class EthersService {
   constructor(private prismaService: PrismaService) {}
 
-  provider = new ethers.providers.JsonRpcProvider(process.env.PROVIDER);
+  private provider = new ethers.providers.JsonRpcProvider(process.env.PROVIDER);
 
   async createWallet(user: string) {
     try {
